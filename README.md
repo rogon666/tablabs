@@ -1,7 +1,7 @@
 # tablabs
 Stata .ado for one-way and two-way tabulation with labels
 
-Syntax
+## Syntax
 
 tablabels varname1 [varname2] [if] [in] [weight] [, options]
 
@@ -11,14 +11,14 @@ tablabels varname1 [varname2] [if] [in] [weight] [, options]
       full              reports frequency, percentage and the traditional tabulation with tabs
     -------------------------------------------------------------------------------------------------------
     
-Description
+## Description
 
     tablabs produces one- and two-way tables adding the numbers (coding) associated to the labels of values
     in a variable. By default, only frequencies are produced by the command, but the option full can be 
     used to obtain also the percentages and an additional table with the traditional tabulation (tabs)
  
  
-Examples
+## Examples
 
     -------------------------------------------------------------------------------------------------------
     Setup
@@ -38,10 +38,12 @@ Examples
         . sysuse auto, clear
         . tab headroom
         . tablabs foreign
-
-   Two-way table with values of labels for foreign
+    
+    Two-way table with values of labels for foreign
         . tablabs headroom foreign
     -------------------------------------------------------------------------------------------------------
+
+   
 
 
 
